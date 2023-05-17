@@ -22,6 +22,8 @@ jobs:
     - run: npm ci
     - name: Start React app in the background
       run: npm start &
+    - name: Run cypress
+      run: npm run cypress:e2e
 
 
   # start:

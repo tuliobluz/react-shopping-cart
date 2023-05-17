@@ -23,8 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "waitapp": "sh \"wait_app.sh\" start",
-    "cy:run": "cypress run --browser chrome waitapp",
+    "cypress:e2e": "cypress run --browser chrome",
     "build": "react-scripts build",
     "test": "react-scripts test --silent",
     "test:watch": "npm test -- --watch",

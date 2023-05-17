@@ -20,11 +20,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    # - name: start and wait app
-    # - uses: iFaxity/wait-on-action
-    #   with:
-    #     resource: http://localhost:8080
-    - run: npm run test:cypress:e2e
+    - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          start: npm start
+          # quote the url to be safe against YML parsing surprises
+          wait-on: 'http://localhost:3000'
 
 
   # start:

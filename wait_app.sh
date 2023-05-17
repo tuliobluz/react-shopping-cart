@@ -1,3 +1,5 @@
+#!/bin/bash
+
 URL=http://localhost:3000/
 
 STATUS=0

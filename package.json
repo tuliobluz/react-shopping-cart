@@ -23,6 +23,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "test:cypress": "start-server-and-test start http://localhost:3000 cypress",
+    "cypress": "cypress run --browser chrome",
     "build": "react-scripts build",
     "test": "react-scripts test --silent",
     "test:watch": "npm test -- --watch",
@@ -31,8 +33,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
     "format": "prettier --write \"**/*.+(ts|tsx|js|json|css)\"",
-    "cypress:open": "cypress open",
-    "test:cypress:e2e": "cypress run --browser chrome"
+    "cypress:open": "cypress open"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -87,6 +88,7 @@
     "firebase-tools": "^10.2.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.10",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "start-server-and-test": "^2.0.0"
   }
 }

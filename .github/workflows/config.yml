@@ -20,8 +20,8 @@ jobs:
         node-version: 14
         cache: 'npm'
     - run: npm ci
-    - name: wait application and run cypress
-      run: npm run waitapp
+    - name: Start React app in the background
+        run: npm start &
 
 
   # start:

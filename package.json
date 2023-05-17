@@ -22,7 +22,7 @@
     "typescript": "^4.6.3"
   },
   "scripts": {
-    "start": "react-scripts start&",
+    "start": "react-scripts start",
     "waitapp": "sh \"wait_app.sh\" start",
     "cy:run": "cypress run --browser chrome waitapp",
     "build": "react-scripts build",

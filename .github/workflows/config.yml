@@ -20,7 +20,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npm run start
+    with:
+      start: yarn start
+      wait-on: http-get://localhost:3000
     - run: npm run test:cypress:e2e
 
 

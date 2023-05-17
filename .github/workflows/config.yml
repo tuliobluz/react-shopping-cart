@@ -21,7 +21,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - name: wait application and run cypress
-      run: npm run cypress
+      run: npm run waitapp
 
 
   # start:

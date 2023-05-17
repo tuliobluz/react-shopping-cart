@@ -22,9 +22,9 @@
     "typescript": "^4.6.3"
   },
   "scripts": {
-    "start": "react-scripts start -p 3030",
-    "cy:run": "cypress run --browser chrome",
-    "cypress": "start-server-and-test start https://localhost:3030 cy:run",
+    "start": "react-scripts start&",
+    "waitapp": "sh \"wait_app.sh\" start",
+    "cy:run": "cypress run --browser chrome waitapp",
     "build": "react-scripts build",
     "test": "react-scripts test --silent",
     "test:watch": "npm test -- --watch",

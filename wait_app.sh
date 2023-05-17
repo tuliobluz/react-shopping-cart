@@ -1,11 +1,10 @@
 #!/bin/bash
 
 URL=http://localhost:3000/
-
 STATUS=0
-function send_request() {
-  STATUS=$(curl -s -o /dev/null -I -w "%{http_code}" ${URL})
-  echo ${STATUS}
+
+function send_request() { 
+  echo $(curl -s -o /dev/null -I -w "%{http_code}" ${URL})
 }
 
 while [ "${RESPONSE}" != "200" ]; do

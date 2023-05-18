@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  react-fe:
+    build:
+      context: ./
+    ports:
+      - '3000:3000'
+  
+  cypress:
+    image: 'cypress/included:12.12.0'
+    depends_on:
+      - react-fe
+    environment:
+      - CYPRESS_baseUrl=http://react-fe:3000
+      - CYPRESS_VIDEO=false
+    working_dir: /cypress
+    volumes:
+      - ./:/cypress

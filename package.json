@@ -85,7 +85,7 @@
     "@types/styled-components": "^5.1.23",
     "cypress-mochawesome-reporter": "^3.4.0",
     "firebase-tools": "^10.2.1",
-    "husky": "^4.2.5",
+    "husky": "8.0.3",
     "lint-staged": "^10.2.10",
     "prettier": "^2.5.1"
   }

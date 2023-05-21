@@ -32,7 +32,8 @@
     "lint": "eslint ./src",
     "format": "prettier --write \"**/*.+(ts|tsx|js|json|css)\"",
     "cypress:open": "cypress open",
-    "test:cypress:e2e": "cypress run --browser chrome"
+    "test:cypress:e2e": "cypress run --browser chrome",
+    "test:cypress:component": "cypress run --browser chrome --component"
   },
   "jest": {
     "collectCoverageFrom": [

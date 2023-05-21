@@ -48,6 +48,12 @@ npm run test:cypress:e2e
 
 This command will execute the tests using the Chrome browser.
 
+```shell
+npm run test:cypress:component
+```
+
+This command will execute the components tests, however, so far component is not from the scope, once the new component testing is define we can follow the instruction [here](https://docs.cypress.io/guides/component-testing/component-framework-configuration).
+
 
 ### Running Cypress E2E Tests using docker
 

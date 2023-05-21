@@ -74,3 +74,21 @@ The following is the suggested folder structure for your Cypress project:
 ## Reporting
 
 This project uses the `cypress-mochawesome-reporter` to generate test reports. You can access the reports at `reports/index.html` after running the tests.
+
+## GitHub Actions Integration
+
+This project includes a GitHub Actions workflow for running Cypress end-to-end tests. The workflow is triggered when you push changes to the repository. The following steps are executed:
+
+1. Checkout the repository.
+2. Install the project dependencies.
+3. Start React app
+4. Run Cypress tests and generate a Mochawesome report.
+5. Upload the Mochawesome report as an artifact.
+
+The generated Mochawesome report can be accessed through the GitHub Actions summary. Additionally, you can configure the workflow to upload videos if needed.
+
+## Slack Integration
+
+After running the react-shopping-cart cypress, the GitHub Actions workflow sends a message to Slack channels. Currently, the message is sent only when the job succeeds. In a real scenario, notifications can be sent for both successful and failed jobs.
+
+If you want to join the Slack channel for integration, please use the following invitation link: [Slack Invitation Link](https://join.slack.com/t/github-integrationhq/shared_invite/zt-1uzcgmgde-j6JNKORGMNZgAI2ayyvUYg)

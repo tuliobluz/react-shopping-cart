@@ -48,6 +48,28 @@ npm run test:cypress:e2e
 
 This command will execute the tests using the Chrome browser.
 
+
+### Running Cypress E2E Tests using docker
+
+To run your Cypress project using Docker, there is the `docker-compose.yml`  configuration. The configuration allows you to set up two services: "react-fe" for your React front-end application and "cypress" for running Cypress tests. 
+
+To get started, make sure you have Docker installed on your machine. Then, follow the steps below:
+
+
+1. Run the following command to build our images
+
+```shell
+docker-compose build
+```
+
+2. Run the following command to start the Docker containers:
+
+```shell
+docker-compose up --exit-code-from cypress
+```
+
+This command will build the React front-end application, start the containers, and run your Cypress tests against the React application. The test results will be displayed in the terminal.
+
 ## Custom Selector
 
 A custom selector has been provided to simplify selecting elements in your tests. The selector is defined in the `commands.js` file located in the `support` folder. Here's an example usage of the custom selector:
